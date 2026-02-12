@@ -1,0 +1,61 @@
+{
+  "name": "toastfytime",
+  "version": "1.0.0",
+  "description": "A lightweight React toast notification library with theme support, positions, progress bar and custom colors.",
+  "type": "module",
+
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+
+  "files": ["dist"],
+
+  "sideEffects": false,
+
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+
+  "keywords": [
+    "react",
+    "toast",
+    "notification",
+    "react-toast",
+    "toast-library",
+    "ui",
+    "react-notifications"
+  ],
+
+  "author": "Raghvendra Pratap Singh",
+  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_GITHUB_USERNAME/toastfytime.git"
+  },
+
+  "peerDependencies": {
+    "react": "^18 || ^19"
+  },
+
+  "devDependencies": {
+    "@types/react": "^18.3.28",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+
+  "engines": {
+    "node": ">=18"
+  }
+}
+
+
